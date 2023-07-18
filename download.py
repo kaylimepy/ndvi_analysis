@@ -60,17 +60,17 @@ def main():
     earth_explorer = EarthExplorer(config['usgs']['username'], config['usgs']['password'])
 
     # Define the region (Tempe, Arizona)
-    latitude, longitude = 33.4255, -111.94
+    latitude, longitude = config['coordinates']['latitude'], config['coordinates']['longitude']
 
     # Define the date interval
-    start_date = '2008-09-01'
-    end_date = '2012-05-04'
+    start_date = str(config['time_period']['start_date'])
+    end_date   = str(config['time_period']['end_date'])
 
     # Output path for the downloaded scenes
     output_dir = './temp/landsat_scenes/'
 
     download_scenes(api, earth_explorer, latitude, longitude, start_date, end_date, 10, output_dir)
-    untar_scenes(output_dir)
+    # untar_scenes(output_dir)
 
     api.logout()
 

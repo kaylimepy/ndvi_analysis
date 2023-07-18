@@ -1,7 +1,7 @@
 # Vegetation Health Monitoring and Prediction
 
 ## Overview
-This Python project aims to evaluate and predict the health of vegetation in a specific region, utilizing satellite data and machine learning techniques. The project employs NASA's EarthExplorer's Landsat 8 satellite imagery for the city of Tempe, Arizona, focusing on data from the year 2020.
+This Python project aims to evaluate and predict the health of vegetation in a specific region, utilizing satellite data and machine learning techniques. The project employs NASA's EarthExplorer's Landsat 8 satellite imagery for the city of Tempe, Arizona, focusing on data from the years I attended Arizona State Univeristy.
 
 ## Methodology
 
@@ -31,4 +31,5 @@ This project serves as a strong starting point for more comprehensive analyses a
 4. **Spatial Analysis:** Investigate spatial patterns and changes in NDVI over the study area. This could include identifying areas of greatest change or areas of consistently high or low NDVI.
 
 ## Usage
-Remove the extension `.example` from `config.yml.example` and update with your username and password. Run `download.py` to retrieve and extract the necessary Landsat 8 scenes. Next, execute the Jupyter notebook for data processing, analysis, and machine learning predictions.
+Remove the extension `.example` from `config.yml.example` and update with your username and password. 
+If you would like to change your location and time period you can do so through `config.yml`. Run `download.py` to retrieve and extract the necessary Landsat 8 scenes. Next, execute the Jupyter notebook for data processing, analysis, and machine learning predictions.
