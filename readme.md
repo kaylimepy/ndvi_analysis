@@ -21,7 +21,10 @@ This project serves as a strong starting point for more comprehensive analyses a
 
 1. **Land Cover Type Filtering:** Future analyses could be more granular by specifically filtering for certain land cover types (like forests, croplands, etc.), providing more targeted insights into different types of vegetation health.
 
-2. **Advanced Machine Learning Models:** More accurate predictions could be achieved by implementing more complex time-series forecasting models such as ARIMA (Autoregressive Integrated Moving Average), SARIMA (Seasonal Autoregressive Integrated Moving Average), Prophet, and LSTM (Long Short Term Memory).
+2. **Advanced Machine Learning Models:** More accurate predictions could be achieved by implementing more complex time-series forecasting models such as:
+    - **Prophet:** Prophet is a procedure for forecasting time series data. It is based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects.
+    - **VAR (Vector Autoregression):** This model is used when two or more time series influence each other. That is, the variables interact with each other.
+    - **State Space Models:** These are a flexible class of models that can capture a wide range of time series patterns.
 
 3. **Inclusion of Ancillary Data:** Additional environmental data such as climate (temperature, precipitation) or human activity (land use change, urban development) could be integrated into the model to help explain and predict changes in vegetation health.
 
